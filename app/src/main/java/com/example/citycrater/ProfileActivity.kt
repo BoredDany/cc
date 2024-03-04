@@ -8,5 +8,7 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
+        //pedir permisos de camara y galeria
+
     }
 }

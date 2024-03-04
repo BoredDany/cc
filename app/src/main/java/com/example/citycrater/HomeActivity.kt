@@ -10,7 +10,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        //pedir permisos de ubicacion, camara, etc.
+        //pedir permisos de ubicacion
 
         val btnProfile = findViewById<ImageButton>(R.id.btnProfile)
         val btnReportBump = findViewById<ImageButton>(R.id.btnReportBump)

@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
 
             android:layout_centerInParent="true"
-            tools:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/logo" />
 
         <TextView
             android:layout_width="match_parent"

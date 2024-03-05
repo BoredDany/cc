@@ -20,8 +20,9 @@
             android:id="@+id/imgProfile"
             android:layout_width="150dp"
             android:layout_height="149dp"
-            tools:srcCompat="@drawable/icons8_male_user_96"
-            android:layout_marginBottom="30dp"/>
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/icons8_male_user_96"
+            tools:srcCompat="@drawable/icons8_male_user_96" />
 
 
         <RelativeLayout

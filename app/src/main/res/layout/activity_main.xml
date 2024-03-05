@@ -17,8 +17,8 @@
             android:id="@+id/imgLogo"
             android:layout_width="wrap_content"
             android:layout_height="120dp"
-            tools:srcCompat="@drawable/logo"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            tools:srcCompat="@drawable/logo" />
 
         <TextView
             android:layout_width="match_parent"

@@ -23,15 +23,15 @@
                 android:id="@+id/origin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
                 android:text="@string/origin" />
 
-            <TextView
+            <EditText
                 android:id="@+id/txtOrigin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/origin"
-                android:text="@string/origen" />
+                android:layout_toEndOf="@id/origin"
+                android:background="@color/white" />
 
         </RelativeLayout>
 
@@ -47,16 +47,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/destination"
-                android:layout_marginRight="20dp"/>
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/txtDestination"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/destino"
-                android:layout_toRightOf="@id/destination" />
-        </RelativeLayout>
+                android:background="@color/white"
+                android:layout_toEndOf="@id/destination" />
 
+        </RelativeLayout>
 
 
         <Button
@@ -71,14 +72,8 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/btnSearch">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/mapa">
-
-            </TextView>
+            android:layout_below="@id/btnSearch"
+            android:background="@drawable/map">
         </FrameLayout>
 
     </RelativeLayout>

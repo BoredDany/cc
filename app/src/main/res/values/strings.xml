@@ -18,4 +18,14 @@
     <string name="nombre">Nombre:</string>
     <string name="email">Email:</string>
     <string name="username">username</string>
+    <string name="radio">radio</string>
+    <string name="titleRadio">Radio:</string>
+    <string name="usernametitle">Username:</string>
+    <string name="passwordTitle">Password:</string>
+    <string name="password">password</string>
+    <string name="citycrater">CityCrater</string>
+    <string name="usernameTitle">Username:</string>
+    <string name="name">Name:</string>
+    <string name="save">Save</string>
+    <string name="register_bump">Register bump</string>
 </resources>

@@ -32,7 +32,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btnFriends.setOnClickListener {  }
+        btnFriends.setOnClickListener {
+            val intent = Intent(this, FriendsActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

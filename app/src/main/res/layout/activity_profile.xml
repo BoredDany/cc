@@ -8,130 +8,138 @@
     android:padding="20dp"
     android:background="@color/backGreen">
 
-    <ImageView
-        android:id="@+id/imgProfile"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:orientation="vertical"
+        android:gravity="center">
 
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/cameraLayout"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/imgProfile"
-        android:layout_marginBottom="30dp">
-
-        <ImageButton
-            android:id="@+id/btnCamera"
+        <ImageView
+            android:id="@+id/imgProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            app:srcCompat="@android:drawable/ic_menu_camera" />
+            tools:srcCompat="@drawable/icons8_male_user_96" />
 
-        <TextView
-            android:id="@+id/camera"
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Change profile photo"
-            android:layout_below="@id/btnCamera" />
+            android:id="@+id/cameraLayout"
+            android:layout_marginBottom="30dp">
 
-    </RelativeLayout>
+            <ImageButton
+                android:id="@+id/btnCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                android:background="@color/seaGreen"/>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/nameLayout"
-        android:layout_below="@+id/cameraLayout"
-        android:layout_centerInParent="true">
 
-        <TextView
-            android:id="@+id/name"
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name:"
-            android:layout_marginRight="10dp"/>
+            android:id="@+id/nameLayout"
+            android:layout_marginBottom="10dp">
 
-        <TextView
-            android:id="@+id/txtName"
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_toEndOf="@+id/name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="nombre"
-            android:layout_toRightOf="@+id/name" />
+            android:id="@+id/emailLayout"
+            android:layout_marginBottom="10dp">
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"/>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/emailLayout"
-        android:layout_below="@id/nameLayout"
-        android:layout_centerInParent="true">
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_toEndOf="@id/email" />
 
-        <TextView
-            android:id="@+id/email"
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email:"
-            android:layout_marginRight="10dp" />
+            android:id="@+id/usernameLayout"
+            android:layout_marginBottom="10dp">
 
-        <TextView
-            android:id="@+id/txtEmail"
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/usernameTitle"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_toEndOf="@id/username" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="email"
-            android:layout_toRightOf="@id/email" />
+            android:id="@+id/passwordLayout">
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/passwordTitle"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"/>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/usernameLayout"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/emailLayout">
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_toEndOf="@id/password" />
 
-        <TextView
-            android:id="@+id/username"
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Username:"
-            android:layout_marginRight="10dp" />
+            android:text="@string/save"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/seaGreen"/>
 
-        <TextView
-            android:id="@+id/txtUsername"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="username"
-            android:layout_toRightOf="@id/username" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/passwordLayout"
-        android:layout_centerInParent="true"
-        android:layout_below="@id/usernameLayout">
-
-        <TextView
-            android:id="@+id/password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Password:"
-            android:layout_marginRight="10dp" />
-
-        <TextView
-            android:id="@+id/txtPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="password"
-            android:layout_toRightOf="@id/password" />
-
-    </RelativeLayout>
-
+    </LinearLayout>
 
 
 </RelativeLayout>

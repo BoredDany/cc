@@ -18,14 +18,25 @@
             android:id="@+id/imgCutyCrater"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:srcCompat="@tools:sample/avatars"
             android:layout_centerInParent="true"
-            android:layout_marginBottom="30dp"/>
+            tools:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="@string/citycrater"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/imgCutyCrater"
+            android:gravity="center"
+            android:layout_marginBottom="30dp">
+        </TextView>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imgCutyCrater"
+            android:layout_below="@id/title"
             android:id="@+id/dataLayout">
 
 
@@ -39,15 +50,16 @@
                     android:id="@+id/username"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Username:"
-                    android:layout_marginRight="20dp"/>
+                    android:text="@string/usernametitle"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"/>
 
-                <TextView
+                <EditText
                     android:id="@+id/txtUsername"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/username"
-                    android:layout_toRightOf="@id/username"/>
+                    android:background="@color/white"
+                    android:layout_toEndOf="@id/username"/>
 
             </RelativeLayout>
 
@@ -62,15 +74,16 @@
                     android:id="@+id/password"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Password:"
-                    android:layout_marginRight="20dp"/>
+                    android:text="@string/passwordTitle"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"/>
 
-                <TextView
+                <EditText
                     android:id="@+id/txtPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="password"
-                    android:layout_toRightOf="@id/password"/>
+                    android:background="@color/white"
+                    android:layout_toEndOf="@id/password"/>
 
             </RelativeLayout>
 
